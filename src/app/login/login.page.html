@@ -1,0 +1,30 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content>
+  <div class="titulo"> <ion-title>Seja bem-vindo!</ion-title></div>
+  <div class ="ion-padding">
+    <form [formGroup]="loginForm" (ngSubmit)="loginUsuario(loginForm)" >
+      
+        
+      <ion-item>
+   
+        <ion-input type="email" placeholder="Email" formControlName="email"  ></ion-input>
+      </ion-item>
+
+        <ion-item >
+           
+            <ion-input class="senha" type="password" placeholder="Senha" formControlName="password"></ion-input>
+        </ion-item>
+      
+      <ion-text id="cadastrar" >
+          <span>Criar conta</span>
+      </ion-text>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-button type="submit" shape="round"  [disabled]="loginForm.invalid"> Entrar </ion-button>
+    </ion-row>
+  </form>
+  </div>
+</ion-content>

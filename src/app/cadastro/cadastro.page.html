@@ -1,0 +1,34 @@
+<ion-header>
+ 
+</ion-header>
+
+<ion-content>
+  <div class="titulo"> <ion-title>Cadastro</ion-title></div>
+  <div class ="ion-padding">
+    <form [formGroup]="cadastroForm" (ngSubmit)="cadastroUsuario(cadastroForm)" >
+      
+      <ion-item>
+        <ion-label position="floating">Nome completo</ion-label>
+        <ion-input type="text" formControlName="name" ></ion-input>
+      </ion-item>  
+
+      <ion-item>
+          <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email" ></ion-input>
+      </ion-item>
+
+        <ion-item >
+            <ion-label position="floating">Senha</ion-label>
+            <ion-input class="senha" type="password"  formControlName="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirme sua senha</ion-label>
+          <ion-input type="password" formControlName="c_password" ></ion-input>
+      </ion-item>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-button type="submit" shape="round"  [disabled]="cadastroForm.invalid"> Entrar </ion-button>
+    </ion-row>
+  </form>
+  </div>
+</ion-content>
