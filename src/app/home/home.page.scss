@@ -1,0 +1,43 @@
+.welcome-card img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+ion-card-content{
+ display: flex;
+ justify-content: space-around;
+ border-top: 1px solid gray;
+ margin-left: 4%;
+ margin-right: 4%;
+ padding-top: 3%; 
+}
+
+ion-button{
+  width: 30vw;
+--border-width: 1px;
+
+}
+
+.lerMais{
+    margin-top: 35%;
+    width: 65vw;
+}
+.titulo{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.login{
+    margin-top: -10%;
+    margin-left: 80%;
+}
+
+ion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ion-title{
+    margin-top: 5%;
+}

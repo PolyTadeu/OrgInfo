@@ -8,17 +8,17 @@
     <form [formGroup]="loginForm" (ngSubmit)="loginUsuario(loginForm)" >
       
         
-      <ion-item>
-   
-        <ion-input type="email" placeholder="Email" formControlName="email"  ></ion-input>
-      </ion-item>
-
-        <ion-item >
-           
-            <ion-input class="senha" type="password" placeholder="Senha" formControlName="password"></ion-input>
+        <ion-item>
+            <ion-label position="floating">Email</ion-label>
+          <ion-input type="email" formControlName="email" ></ion-input>
         </ion-item>
+  
+          <ion-item >
+              <ion-label position="floating">Senha</ion-label>
+              <ion-input class="senha" type="password"  formControlName="password"></ion-input>
+          </ion-item>
       
-      <ion-text id="cadastrar" >
+      <ion-text id="cadastrar" (click)="irParaCadastro()" >
           <span>Criar conta</span>
       </ion-text>
 
