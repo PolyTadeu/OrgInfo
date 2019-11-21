@@ -16,11 +16,9 @@ export class LoginPage implements OnInit {
   	});
   }
 
-  irParaCadastro(){
+  abrirCadastro(){
     this.router.navigateByUrl('/cadastro');
-
   }
-
 
   ngOnInit() {
   }

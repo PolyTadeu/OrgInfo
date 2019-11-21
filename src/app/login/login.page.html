@@ -1,30 +1,33 @@
-<ion-header>
-
-</ion-header>
-
 <ion-content>
-  <div class="titulo"> <ion-title>Seja bem-vindo!</ion-title></div>
-  <div class ="ion-padding">
+  <div class="bg-login">
+    <!--Texto-->
+    <h6 class="Text">
+      Entre com sua conta para começar
+    </h6>
     <form [formGroup]="loginForm" (ngSubmit)="loginUsuario(loginForm)" >
+    <div class="forms">
       
-        
-        <ion-item>
-            <ion-label position="floating">Email</ion-label>
+        <ion-item id="entrada"  class="ion-margin-top bg-transparent">
+          <ion-label position="floating">Email</ion-label>
           <ion-input type="email" formControlName="email" ></ion-input>
         </ion-item>
   
-          <ion-item >
-              <ion-label position="floating">Senha</ion-label>
-              <ion-input class="senha" type="password"  formControlName="password"></ion-input>
-          </ion-item>
+        <ion-item id="entrada"  class="ion-margin-top bg-transparent">
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input class="senha" type="password"  formControlName="password"></ion-input>
+        </ion-item>
       
-      <ion-text id="cadastrar" (click)="irParaCadastro()" >
-          <span>Criar conta</span>
-      </ion-text>
+    </div>
+      
+        <!--Criar nova conta-->
+        <div class="txtCadastro" (click)= "abrirCadastro()" >
+            <span>Quero criar uma nova conta</span>
+        </div>
 
-    <ion-row class="ion-justify-content-center">
-      <ion-button type="submit" shape="round"  [disabled]="loginForm.invalid"> Entrar </ion-button>
-    </ion-row>
-  </form>
+        <ion-row class="ion-justify-content-center">
+          <ion-button shape="round" [disabled]="loginForm.invalid" (click)="abrirHome()"> Entrar </ion-button>
+        </ion-row>
+    </form>
+      
   </div>
 </ion-content>
