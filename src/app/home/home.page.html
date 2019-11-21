@@ -9,16 +9,44 @@
 
 <ion-content>
   <ion-card>
-    <img src="/assets/imagem_teste.jpg" alt="" />
+    <img src="/assets/MarDeLixo.jpg" alt="" />
     <ion-card-header>
-        <ion-card-title>Água é importante</ion-card-title>
+        <ion-card-title>O gigantesco 'mar de lixo' no Caribe</ion-card-title>
       <div class="titulo">
-        <ion-card-subtitle>Estima-se que 97,5% da água existente no mundo é salgada e não é adequada ao nosso consumo direto nem à irrigação da plantação.
+        <ion-card-subtitle> Apenas nos oceanos, estima-se que sejam despejados 8 milhões de toneladas de plástico a cada ano.
            </ion-card-subtitle>
-        <ion-chip class="lerMais">
+        <ion-chip class="lerMais" (click)="irParaNoticia1()">
           <ion-label>Ler mais</ion-label>
         </ion-chip>
       </div>
     </ion-card-header>
   </ion-card>
+
+  <ion-card>
+      <img src="/assets/tartOleo.jfif" alt="" />
+      <ion-card-header>
+          <ion-card-title>As manchas de óleo já afetaram mais de 650 localidades</ion-card-title>
+        <div class="titulo">
+          <ion-card-subtitle>  Há registro de manchas de óleo nos 9 estados do Nordeste – Alagoas, Bahia, Ceará, Maranhão, Paraíba[...]
+             </ion-card-subtitle>
+          <ion-chip class="lerMais" (click)="irParaNoticia2()">
+            <ion-label>Ler mais</ion-label>
+          </ion-chip>
+        </div>
+      </ion-card-header>
+    </ion-card>
+
+    <ion-card>
+        <img src="/assets/limpeza.jfif" alt="" />
+        <ion-card-header>
+            <ion-card-title>O Dia Mundial de Limpeza de Praias</ion-card-title>
+          <div class="titulo">
+            <ion-card-subtitle> Ao redor do Planeta, organizações governamentais e não-governamentais, junto com a sociedade civil organizada[...]
+               </ion-card-subtitle>
+            <ion-chip class="lerMais" (click)="irParaNoticia3()">
+              <ion-label>Ler mais</ion-label>
+            </ion-chip>
+          </div>
+        </ion-card-header>
+      </ion-card>
 </ion-content>

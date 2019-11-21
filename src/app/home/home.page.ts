@@ -15,6 +15,16 @@ export class HomePage implements OnInit {
 
   }
 
+  irParaNoticia1(){
+    this.router.navigateByUrl('/noticia1');
+  }
+  irParaNoticia2(){
+    this.router.navigateByUrl('/noticia2');
+  }
+  irParaNoticia3(){
+    this.router.navigateByUrl('/noticia3');
+  }
+
   ngOnInit() {
   }
 
