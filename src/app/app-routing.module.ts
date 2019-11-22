@@ -32,6 +32,22 @@ const routes: Routes = [
   {
     path: 'noticia3',
     loadChildren: () => import('./noticia3/noticia3.module').then( m => m.Noticia3PageModule)
+  },
+  {
+    path: 'quiz2',
+    loadChildren: () => import('./quiz2/quiz2.module').then( m => m.Quiz2PageModule)
+  },
+  {
+    path: 'quiz3',
+    loadChildren: () => import('./quiz3/quiz3.module').then( m => m.Quiz3PageModule)
+  },
+  {
+    path: 'quiz4',
+    loadChildren: () => import('./quiz4/quiz4.module').then( m => m.Quiz4PageModule)
+  },
+  {
+    path: 'quiz5',
+    loadChildren: () => import('./quiz5/quiz5.module').then( m => m.Quiz5PageModule)
   }
 
 ];

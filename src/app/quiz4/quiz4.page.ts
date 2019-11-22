@@ -3,11 +3,11 @@ import { AlertController } from '@ionic/angular';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-quiz',
-  templateUrl: './quiz.page.html',
-  styleUrls: ['./quiz.page.scss'],
+  selector: 'app-quiz4',
+  templateUrl: './quiz4.page.html',
+  styleUrls: ['./quiz4.page.scss'],
 })
-export class QuizPage implements OnInit {
+export class Quiz4Page implements OnInit {
 
   constructor(public alertController: AlertController,private router: Router) {}
 
@@ -15,10 +15,11 @@ export class QuizPage implements OnInit {
     const alert = await this.alertController.create({
       header:'Parabéns!',
       subHeader:'Nemo está feliz com você.',
+      message:'Apenas 3% da água do mundo é doce, 70% está na forma de gelo ou no solo, sendo 1% dela sendo potável.',
       buttons: [{
         text: 'Ok',
         handler: () => {
-          this.router.navigateByUrl('/quiz2');
+          this.router.navigateByUrl('/quiz5');
         }
       }]
     });
@@ -31,7 +32,7 @@ export class QuizPage implements OnInit {
       buttons: [{
         text: 'Ok',
         handler: () => {
-          this.router.navigateByUrl('/quiz2');
+          this.router.navigateByUrl('/quiz5');
         }
       }]
     });

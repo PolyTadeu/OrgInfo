@@ -3,12 +3,13 @@ import { AlertController } from '@ionic/angular';
 import {Router} from '@angular/router';
 
 @Component({
-  selector: 'app-quiz',
-  templateUrl: './quiz.page.html',
-  styleUrls: ['./quiz.page.scss'],
+  selector: 'app-quiz3',
+  templateUrl: './quiz3.page.html',
+  styleUrls: ['./quiz3.page.scss'],
 })
-export class QuizPage implements OnInit {
+export class Quiz3Page implements OnInit {
 
+  
   constructor(public alertController: AlertController,private router: Router) {}
 
   async alertaCerta() {
@@ -18,7 +19,7 @@ export class QuizPage implements OnInit {
       buttons: [{
         text: 'Ok',
         handler: () => {
-          this.router.navigateByUrl('/quiz2');
+          this.router.navigateByUrl('/quiz4');
         }
       }]
     });
@@ -31,7 +32,7 @@ export class QuizPage implements OnInit {
       buttons: [{
         text: 'Ok',
         handler: () => {
-          this.router.navigateByUrl('/quiz2');
+          this.router.navigateByUrl('/quiz4');
         }
       }]
     });
