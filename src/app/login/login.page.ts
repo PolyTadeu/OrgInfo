@@ -20,6 +20,10 @@ export class LoginPage implements OnInit {
     this.router.navigateByUrl('/cadastro');
   }
 
+  abrirHome(){
+    this.router.navigateByUrl('/home');
+  }
+
   ngOnInit() {
   }
 

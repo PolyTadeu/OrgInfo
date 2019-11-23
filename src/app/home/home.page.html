@@ -2,8 +2,8 @@
   <ion-toolbar>
     <ion-title>VidAgua</ion-title>
     <ion-chip class="login" (click)="irParaLogin()">
-        <ion-label>Login</ion-label>
-    </ion-chip>
+        <ion-label>Sair</ion-label>
+    </ion-chip> 
   </ion-toolbar>
 </ion-header>
 
@@ -49,4 +49,10 @@
           </div>
         </ion-card-header>
       </ion-card>
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="irParaQuiz()">
+        <ion-fab-button>
+          <ion-icon name="bulb"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+      
 </ion-content>
