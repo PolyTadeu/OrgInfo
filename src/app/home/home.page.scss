@@ -2,7 +2,15 @@
   max-height: 35vh;
   overflow: hidden;
 }
-
+ion-toolbar{
+  --background:teal;
+  color: beige;
+}
+ion-chip{
+  --background:#004A4A;
+  color: beige;
+  margin-bottom: 23px;
+}
 ion-card-content{
  display: flex;
  justify-content: space-around;
@@ -16,6 +24,9 @@ ion-button{
   width: 30vw;
 --border-width: 1px;
 
+}
+ion-fab-button{
+  --background:#004A4A;
 }
 
 .lerMais{

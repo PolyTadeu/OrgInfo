@@ -1,34 +1,47 @@
-<ion-header>
- 
-</ion-header>
-
 <ion-content>
-  <div class="titulo"> <ion-title>Cadastro</ion-title></div>
-  <div class ="ion-padding">
-    <form [formGroup]="cadastroForm" (ngSubmit)="cadastroUsuario(cadastroForm)" >
+    <div class="bg-cadastro">
+      <!--Texto-->
       
-      <ion-item>
-        <ion-label position="floating">Nome completo</ion-label>
-        <ion-input type="text" formControlName="name" ></ion-input>
-      </ion-item>  
+      <div class="center">
+        <img src="assets/Logo.png" alt="Logo" class="logo" width="260">
+      </div>
+      <!--Texto-->
+      <h6 class="Text">Cadastre-se pra começar</h6>
+      <form [formGroup]="cadastroForm" (ngSubmit)="cadastroUsuario(cadastroForm)">
+      <div class="forms">
+        
+          <ion-item id="entrada"  class="ion-margin-top bg-transparent">
+            <ion-label position="floating">Nome Completo</ion-label>
+            <ion-input type="text" formControlName="name" ></ion-input>
+          </ion-item>
+    
+          <ion-item id="entrada"  class="ion-margin-top bg-transparent">
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="email" formControlName="email" ></ion-input>
+          </ion-item>
 
-      <ion-item>
-          <ion-label position="floating">Email</ion-label>
-        <ion-input type="email" formControlName="email" ></ion-input>
-      </ion-item>
+          <ion-item id="entrada"  class="ion-margin-top bg-transparent">
+              <ion-label position="floating">Senha</ion-label>
+              <ion-input type="password" formControlName="password" ></ion-input>
+          </ion-item>
 
-        <ion-item >
-            <ion-label position="floating">Senha</ion-label>
-            <ion-input class="senha" type="password"  formControlName="password"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-label position="floating">Confirme sua senha</ion-label>
-          <ion-input type="password" formControlName="c_password" ></ion-input>
-      </ion-item>
+          <ion-item id="entrada"  class="ion-margin-top bg-transparent">
+              <ion-label position="floating">Confirme sua senha</ion-label>
+              <ion-input type="password" formControlName="c_password"></ion-input>
+            </ion-item>
+        
+      </div>
+        
+          <!--Criar nova conta-->
+          <div class="txtCadastro" (click)= "abrirLogin()" >
+              <span>Já tenho uma conta</span>
+          </div>
+  
+          <ion-row class="ion-justify-content-center">
+            <ion-button shape="round" [disabled]="cadastroForm.invalid" (click)="abrirHome()"> Entrar </ion-button>
+          </ion-row>
+      </form>
+        
+    </div>
+  </ion-content>
 
-    <ion-row class="ion-justify-content-center">
-      <ion-button type="submit" shape="round"  [disabled]="cadastroForm.invalid"> Entrar </ion-button>
-    </ion-row>
-  </form>
-  </div>
-</ion-content>

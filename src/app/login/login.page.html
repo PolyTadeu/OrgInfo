@@ -1,9 +1,12 @@
 <ion-content>
   <div class="bg-login">
     <!--Texto-->
-    <h6 class="Text">
-      Entre com sua conta para começar
-    </h6>
+    
+    <div class="center">
+      <img src="assets/Logo.png" alt="Logo" class="logo" width="260">
+    </div>
+    <!--Texto-->
+    <h6 class="Text">Entre com sua conta para começar</h6>
     <form [formGroup]="loginForm" (ngSubmit)="loginUsuario(loginForm)" >
     <div class="forms">
       

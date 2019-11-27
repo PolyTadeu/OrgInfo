@@ -48,6 +48,13 @@ export class CadastroPage implements OnInit {
     });
     await alert.present();
   }
+  abrirLogin(){
+    this.router.navigateByUrl('/login');
+  }
+
+  abrirHome(){
+    this.router.navigateByUrl('/home');
+  }
   ngOnInit() {
   }
 
