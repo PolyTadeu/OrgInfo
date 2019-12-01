@@ -1,26 +1,21 @@
 <ion-header>
     <ion-toolbar>
       <ion-title>
-        Quiz
-        <img class="nemo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e4698d5a-8ee4-4bd3-8e58-2ba931bf6208/dbs07by-be831353-0b36-4188-b755-0e460ae77ff1.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi9lNDY5OGQ1YS04ZWU0LTRiZDMtOGU1OC0yYmE5MzFiZjYyMDgvZGJzMDdieS1iZTgzMTM1My0wYjM2LTQxODgtYjc1NS0wZTQ2MGFlNzdmZjEucG5nIn1dXX0.bOGyXHgTaxxa25K96k6D1mf2EqYnH2m8iGC87CD6R2Q" width="65">
+        Pergunta 2/5
+        <img class="nemo" src="assets/nemo.png" width="65">
       </ion-title>
     </ion-toolbar>
   </ion-header>
   
   <ion-content>
-    <div class="pergunta">
-      <ion-item>
-        <ion-text>2-Qual dos produtos abaixo consomem mais água para  na sua  produção?
-
-        </ion-text>
-      <!-- <img src="http://2.bp.blogspot.com/-1ZPWNLonSFk/UKhWPMGi39I/AAAAAAAAADM/MPgsus2mlAo/s1600/retangulo01.gif"> -->
-    </ion-item>
-    </div>
+      <div class="pergunta">
+          <img class="pImg" src="assets/pergunta2.png">
+        </div>
     <div class="respostas">
-      <ion-button expand="full"  (click)="alertaErrada()" > A) Papel</ion-button>
-      <ion-button expand="full" (click)="alertaErrada()"> B) Calça jeans</ion-button>
-      <ion-button expand="full" (click)="alertaCerta()"> C) Carne bovina</ion-button>
-      <ion-button expand="full"  (click)="alertaErrada()"> D) Papel</ion-button>
+      <ion-button expand="full" shape="round"  (click)="alertaErrada()" > A) Papel</ion-button>
+      <ion-button expand="full" shape="round" (click)="alertaErrada()"> B) Calça jeans</ion-button>
+      <ion-button expand="full" shape="round" (click)="alertaCerta()"> C) Carne bovina</ion-button>
+      <ion-button expand="full" shape="round" (click)="alertaErrada()"> D) Papel</ion-button>
     </div>
   </ion-content>
   <!--<img class="nemo" src="https://tse2.mm.bing.net/th?id=OIP._ZrjCljwEi-KJzU0zCdQJwHaFw&pid=Api&P=0&w=198&h=155" width="50">-->

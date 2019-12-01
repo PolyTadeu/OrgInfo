@@ -1,25 +1,33 @@
-.pergunta {
-    
-    margin-top: 15%;
-    margin-left: 8%;
-}
+
 .respostas {
     margin-top: 20%;
 }
 ion-button {
-    --background: teal;
+    --background: #0BACAC;
 }
 .nemo {
-    margin-left: 200px;
+    margin-left: 130px;
+    margin-top: 1%;
+
 }
-ion-item{
-    --border-width:5px;
-     width: 82vw;
-    --border-color:rgb(14, 12, 12);
-   
+.pImg{
+    width:84vw;
+    margin-left: 7%;
+    margin-top:10%;
+    border: 1px solid;
+    padding: 10px;
 }
 
-ion-text{
-    width: 80vw;
-    font-size: 1.25em;
+
+ion-title{
+    margin-bottom: 2%;
+}
+
+ion-toolbar{
+    --background:#004A4A;
+    color: beige;
+  }
+
+  ion-content{
+    --background: teal;
 }
