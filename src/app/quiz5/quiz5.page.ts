@@ -14,8 +14,8 @@ export class Quiz5Page implements OnInit {
   async alertaCerta() {
     const alert = await this.alertController.create({
       header:'Parabéns!',
-      subHeader:'Nemo está feliz com você.',
-      message:'Obrigado por participar!',
+      subHeader:'Nemo está feliz com você, agradecemos sua participação !',
+      message:'Uma pesquisa recente, publicada na revista científica “Scientific Reports”, constatou que a área de lixo poderia ser compara ao território do Japão.',
       buttons: [{
         text: 'Ok',
         handler: () => {
@@ -28,8 +28,8 @@ export class Quiz5Page implements OnInit {
   async alertaErrada() {
     const alert2 = await this.alertController.create({
       header:'Resposta Errada!',
-      subHeader:'Tente melhorar na Próxima.',
-      message:'Obrigado por participar!',
+      subHeader:'Tente melhorar na Próxima, agradecemos sua participação !',
+      message:'Uma pesquisa recente, publicada na revista científica “Scientific Reports”, constatou que a área de lixo poderia ser compara ao território do Japão.',
       buttons: [{
         text: 'Ok',
         handler: () => {

@@ -29,6 +29,7 @@ export class Quiz4Page implements OnInit {
     const alert2 = await this.alertController.create({
       header:'Resposta Errada!',
       subHeader:'Tente melhorar na Próxima.',
+      message:'Apenas 3% da água do mundo é doce, 70% está na forma de gelo ou no solo, sendo 1% dela sendo potável.',
       buttons: [{
         text: 'Ok',
         handler: () => {

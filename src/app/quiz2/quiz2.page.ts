@@ -29,6 +29,7 @@ export class Quiz2Page implements OnInit {
     const alert2 = await this.alertController.create({
       header:'Resposta Errada!',
       subHeader:'Tente melhorar na Próxima.',
+      message:'Um quilo de carne para chegar até o churrasco precisa de 15,4 mil litros de água',
       buttons: [{
         text: 'Ok',
         handler: () => {

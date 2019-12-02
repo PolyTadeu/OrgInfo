@@ -15,6 +15,7 @@ export class QuizPage implements OnInit {
     const alert = await this.alertController.create({
       header:'Parabéns!',
       subHeader:'Nemo está feliz com você.',
+      message:'Cerca de 85%',
       buttons: [{
         text: 'Ok',
         handler: () => {
@@ -28,6 +29,7 @@ export class QuizPage implements OnInit {
     const alert2 = await this.alertController.create({
       header:'Resposta Errada!',
       subHeader:'Tente melhorar na Próxima.',
+      message:'Cerca de 85%',
       buttons: [{
         text: 'Ok',
         handler: () => {

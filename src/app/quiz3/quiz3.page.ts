@@ -16,6 +16,7 @@ export class Quiz3Page implements OnInit {
     const alert = await this.alertController.create({
       header:'Parabéns!',
       subHeader:'Nemo está feliz com você.',
+      message:' Em setembro as organizações governamentais e não-governamentais, junto com a sociedade civil organizada, realizam ações como a penalização de infratores que poluem as margens das praias.',
       buttons: [{
         text: 'Ok',
         handler: () => {
@@ -29,6 +30,7 @@ export class Quiz3Page implements OnInit {
     const alert2 = await this.alertController.create({
       header:'Resposta Errada!',
       subHeader:'Tente melhorar na Próxima.',
+      message:' Em setembro as organizações governamentais e não-governamentais, junto com a sociedade civil organizada, se propõem a penalização de infratores que poluem as margens das praias.',
       buttons: [{
         text: 'Ok',
         handler: () => {
